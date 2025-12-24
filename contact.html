@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us – Shaheer APIs</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Shaheer APIs</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="nav-brand">Shaheer APIs</div>
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="docs.html">Docs</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="docs.html" class="nav-link">Docs</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="contact-section">
-            <h1>Contact Us</h1>
-            
-            <div class="contact-info">
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1>Contact Us</h1>
+            </header>
+
+            <section class="contact-info">
                 <h2>Get in Touch</h2>
                 <p><strong>Email:</strong> <a href="mailto:support@shaheerapis.com">support@shaheerapis.com</a></p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Address:</strong><br>
-                123 API Boulevard, Suite 456<br>
-                San Francisco, CA 94107<br>
-                United States</p>
-            </div>
+                <p><strong>Address:</strong> Business Address, Khyber Pakhtunkhwa, Pakistan</p>
+                <p><strong>Phone:</strong> +92 XXX XXXXXXX (optional)</p>
+            </section>
 
-            <div class="contact-form">
+            <section class="contact-form">
                 <h2>Send a Message</h2>
-                <form action="#" method="POST">
+                <form id="contactForm" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -47,15 +52,16 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p><a href="index.html">← Back to Home</a></p>
-        <p>&copy; 2025 Shaheer APIs. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shaheer APIs</p>
+        </div>
     </footer>
 </body>
 </html>
