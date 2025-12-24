@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaheer APIs – Email Verification API</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShaheerDev API Suite</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .api-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">Shaheer APIs</div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="docs.html" class="nav-link">Docs</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <header>
+    <h1>ShaheerDev API Suite</h1>
+    <p>Fast, secure, and scalable APIs for modern SaaS platforms</p>
+  </header>
 
-    <main class="main-content">
-        <div class="container">
-            <header class="header">
-                <h1>Welcome to Shaheer APIs</h1>
-            </header>
-            
-            <section class="description">
-                <p>
-                    Our Email Verification API provides real-time validation of email addresses to ensure deliverability and authenticity. 
-                    Verify syntax, domain existence, mailbox validity, and detect disposable/temporary email services - all with a simple API call. 
-                    Ideal for user registration, lead generation, and maintaining clean mailing lists.
-                </p>
-            </section>
-        </div>
-    </main>
+  <section>
+    <div class="api-box">
+      <h2>📧 Email Validator API</h2>
+      <p>Verify email addresses in real-time. Prevent fake signups and improve deliverability.</p>
+      <p><strong>Endpoint:</strong> <code>/api/validate-email</code></p>
+      <p><strong>Method:</strong> POST</p>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Shaheer APIs</p>
-        </div>
-    </footer>
+    <div class="api-box">
+      <h2>🌍 IP Geolocation API</h2>
+      <p>Detect user location based on IP. Useful for analytics, fraud detection, and personalization.</p>
+      <p><strong>Endpoint:</strong> <code>/api/ip-lookup</code></p>
+      <p><strong>Method:</strong> GET</p>
+    </div>
+
+    <div class="api-box">
+      <h2>🔐 Secure Token Generator</h2>
+      <p>Generate secure tokens for authentication, password resets, and session management.</p>
+      <p><strong>Endpoint:</strong> <code>/api/generate-token</code></p>
+      <p><strong>Method:</strong> POST</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ShaheerDev | All rights reserved
+  </footer>
 </body>
 </html>
