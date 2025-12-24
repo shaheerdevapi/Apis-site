@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaheer APIs Documentation</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Shaheer APIs</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1>Email Verification API Documentation</h1>
+            </header>
+
+            <section class="auth-section">
+                <h2>Authentication</h2>
+                <p>All API requests require authentication via an API key sent in the request header:</p>
+                <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+            </section>
+
+            <section class="endpoint-section">
+                <h2>Endpoint</h2>
+                <div class="endpoint">
+                    <span class="method">GET</span> <span class="path">/validate</span>
+                </div>
+                <p>Validates an email address for syntax, domain existence, and basic mailbox checks.</p>
+
+                <h3>Query Parameters</h3>
+                <table class="params-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Type</th>
+                            <th>Required</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>email</code></td>
+                            <td>string</td>
+                            <td>Yes</td>
+                            <td>Email address to validate</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Example Request</h3>
+                <pre><code>GET /validate?email=test@example.com</code></pre>
+
+                <h3>Sample Response (200 OK)</h3>
+                <pre><code class="json">{
+  "email": "test@example.com",
+  "valid": true,
+  "domain": "example.com"
+}</code></pre>
+
+                <h3>Response Fields</h3>
+                <ul>
+                    <li><code>email</code>: The email submitted for validation</li>
+                    <li><code>valid</code>: Boolean indicating overall validity</li>
+                    <li><code>domain</code>: Extracted domain from the email</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shaheer APIs</p>
+        </div>
+    </footer>
+</body>
+</html>
