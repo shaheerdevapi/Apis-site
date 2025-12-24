@@ -3,51 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShaheerDev API Suite</title>
+  <title>ShaheerDev Technologies | API Suite</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-brand">ShaheerDev APIs</div>
+      <div class="nav-brand">ShaheerDev Technologies</div>
       <ul class="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#apis" class="nav-link">APIs</a></li>
         <li><a href="#docs" class="nav-link">Docs</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="main-content container">
-    <header class="header">
-      <h1>ShaheerDev API Suite</h1>
-      <p class="description">Fast, secure, and scalable APIs for SaaS compliance and global integrations.</p>
-    </header>
+  <!-- Hero Section -->
+  <header class="header container">
+    <h1>ShaheerDev API Suite</h1>
+    <p class="description">Trusted APIs for SaaS compliance, secure integrations, and global scalability.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </header>
 
-    <!-- About Section -->
+  <!-- About Section -->
+  <main class="main-content container">
     <section id="about">
-      <h2>About Our APIs</h2>
-      <p>We provide developer-friendly APIs designed for SaaS platforms. Our services help you validate users, secure authentication, and integrate global workflows with ease.</p>
+      <h2>About Us</h2>
+      <p>ShaheerDev Technologies builds developer‑friendly APIs designed for SaaS platforms. Our mission is to simplify compliance, enhance security, and enable global growth for businesses of all sizes.</p>
     </section>
 
-    <!-- Docs Section -->
-    <section id="docs" class="endpoint-section">
-      <h2>API Endpoints</h2>
-
+    <!-- API Showcase -->
+    <section id="apis">
+      <h2>Our APIs</h2>
       <div class="endpoint">
         <span class="method">POST</span>
         <span class="path">/api/validate-email</span>
-        <p>Validate email addresses in real-time to prevent fake signups.</p>
+        <p>Verify email addresses in real‑time to prevent fake signups.</p>
       </div>
-
       <div class="endpoint">
         <span class="method">GET</span>
         <span class="path">/api/ip-lookup</span>
         <p>Detect user location based on IP for analytics and fraud detection.</p>
       </div>
-
       <div class="endpoint">
         <span class="method">POST</span>
         <span class="path">/api/generate-token</span>
@@ -55,8 +54,25 @@
       </div>
     </section>
 
+    <!-- Docs Section -->
+    <section id="docs">
+      <h2>Sample Request & Response</h2>
+      <pre><code class="json">
+POST /api/validate-email
+{
+  "email": "test@example.com"
+}
+
+Response:
+{
+  "valid": true,
+  "domain": "example.com"
+}
+      </code></pre>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact-info">
+    <section id="contact">
       <h2>Contact Us</h2>
       <p>For integration support or business inquiries, reach out below:</p>
       <form class="contact-form">
@@ -79,7 +95,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2025 ShaheerDev | All rights reserved
+    &copy; 2025 ShaheerDev Technologies | Contact: shaheerkhan@zenvexa.cloud
   </footer>
 </body>
 </html>
