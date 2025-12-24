@@ -4,71 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShaheerDev API Suite</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #007acc;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .api-box {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header>
-    <h1>ShaheerDev API Suite</h1>
-    <p>Fast, secure, and scalable APIs for modern SaaS platforms</p>
-  </header>
-
-  <section>
-    <div class="api-box">
-      <h2>📧 Email Validator API</h2>
-      <p>Verify email addresses in real-time. Prevent fake signups and improve deliverability.</p>
-      <p><strong>Endpoint:</strong> <code>/api/validate-email</code></p>
-      <p><strong>Method:</strong> POST</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">ShaheerDev APIs</div>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#docs" class="nav-link">Docs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="api-box">
-      <h2>🌍 IP Geolocation API</h2>
-      <p>Detect user location based on IP. Useful for analytics, fraud detection, and personalization.</p>
-      <p><strong>Endpoint:</strong> <code>/api/ip-lookup</code></p>
-      <p><strong>Method:</strong> GET</p>
-    </div>
+  <!-- Main Content -->
+  <main class="main-content container">
+    <header class="header">
+      <h1>ShaheerDev API Suite</h1>
+      <p class="description">Fast, secure, and scalable APIs for SaaS compliance and global integrations.</p>
+    </header>
 
-    <div class="api-box">
-      <h2>🔐 Secure Token Generator</h2>
-      <p>Generate secure tokens for authentication, password resets, and session management.</p>
-      <p><strong>Endpoint:</strong> <code>/api/generate-token</code></p>
-      <p><strong>Method:</strong> POST</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Our APIs</h2>
+      <p>We provide developer-friendly APIs designed for SaaS platforms. Our services help you validate users, secure authentication, and integrate global workflows with ease.</p>
+    </section>
 
-  <footer>
+    <!-- Docs Section -->
+    <section id="docs" class="endpoint-section">
+      <h2>API Endpoints</h2>
+
+      <div class="endpoint">
+        <span class="method">POST</span>
+        <span class="path">/api/validate-email</span>
+        <p>Validate email addresses in real-time to prevent fake signups.</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method">GET</span>
+        <span class="path">/api/ip-lookup</span>
+        <p>Detect user location based on IP for analytics and fraud detection.</p>
+      </div>
+
+      <div class="endpoint">
+        <span class="method">POST</span>
+        <span class="path">/api/generate-token</span>
+        <p>Generate secure tokens for authentication and session management.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-info">
+      <h2>Contact Us</h2>
+      <p>For integration support or business inquiries, reach out below:</p>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Your email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
     &copy; 2025 ShaheerDev | All rights reserved
   </footer>
 </body>
